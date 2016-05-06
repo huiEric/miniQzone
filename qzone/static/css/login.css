@@ -1,0 +1,178 @@
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  font-family:sans-serif;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+#back
+{
+	display: inline;
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+}
+.masthead-brand
+{
+	display: inline;
+	position: relative;
+	bottom: 650px;
+	left: 100px;
+	font-size: 40px;
+
+}
+.nav.nav-pills
+{
+	position: absolute;
+	top: 40px;
+	right: 200px;
+	background-color: initial;
+}
+#signup
+{
+	background-color: initial;
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+#login
+{
+	position: relative;
+	right: 20px;
+	border-style: solid;
+	border-color: white;
+	border-width: thin;
+}
+.cover-heading
+{
+	position: relative;
+	bottom: 350px;
+	right: 415px;
+}
+#desc
+{
+	position: relative;
+	bottom: 340px;
+	right: 467px;
+}
+span
+{
+	position: relative;
+	left: 19px;
+}
+.btn.btn-primary.btn-lg
+{
+	display: inline;
+	position: absolute;
+	bottom: 148px;
+	left:105px; 
+	background-color: #43bc71;
+	border-color: #43bc71;
+	border-width: medium;
+}
+.modal.fade
+{
+
+}
+#myModalLabel,.modal.fade
+{
+	color:black;
+	text-shadow: none;
+}
+label
+{
+	float: left;
+	text-shadow: none;
+}
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+
+
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+  	vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+#signup
+{
+	display: inline;
+	position: relative;
+	right: 30px;
+	opacity: 1;
+}
+#learn
+{
+	display: inline;
+	position: relative;
+	left: 30px;
+}

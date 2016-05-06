@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>miniQzone</title>
+    <link href="../static/css/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/login.css">
+  </head>
+  <body>
+<img src="../static/picture/login.jpg" id="back">
+<h1 class="masthead-brand">miniQzone</h1>
+<ul class="nav nav-pills">
+  <li role="presentation"><a href="" id="login" onmouseover="change5(this)" onmouseout="change6(this)">Login</a></li>
+  <li role="presentation" class="active"><a href="signup.html" id="signup" onmouseover="change3(this)" onmouseout="change4(this)">Create an account</a></li>
+</ul>   
+<h2 class="cover-heading">A lightweight and friendly qq zone</h2>
+<p class="lead" id="desc">Start up!Enjoy your qzone free of ads<br><span>and useless buttons.</span></p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" onmouseover="change1(this)" onmouseout="change2(this)">
+  Login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Sign in</h4>
+      </div>
+      <div class="modal-body">
+		<form>
+		  <div class="form-group">
+		    <label for="exampleInputUsername1" class="text-left">Username</label>
+		    <input type="text" class="form-control" id="exampleInputUsername" placeholder="Username">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1" class="text-left">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+		  <div class="form-group">
+		  	<div class="check-box">
+		  		<label>
+		  			<input type="checkbox" value="1">&nbsp;&nbsp;Remember me</input>
+		  		</label>
+		  	</div>
+		  </div>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	function change1(x){
+		x.style.backgroundColor='#43bc71';
+		x.style.borderColor='#43bc71';
+	}
+	function change2(x){
+		x.style.backgroundColor='#3CD476';
+		x.style.borderColor='#3CD476';
+	}
+	function change3(x){
+		x.style.backgroundColor='#4783B7';
+		x.style.borderColor='#4783B7';
+	}
+	function change4(x){
+		x.style.backgroundColor='initial';
+		x.style.borderColor='initial';
+	}
+	function change5(x){
+		x.style.backgroundColor='#43bc71';
+		x.style.borderColor='#43bc71';
+	}
+	function change6(x){
+		x.style.backgroundColor='initial';
+		x.style.borderColor='white';
+	}
+	function age(x){
+		x.value="18";
+	}
+	function validate_email(field,alerttxt)
+	{
+		with (field)
+		{
+			apos=value.indexOf("@")
+			dotpos=value.lastIndexOf(".")
+			if (apos<1||dotpos-apos<2) 
+			  {alert(alerttxt);return false}
+			else {return true}
+		}
+	}
+</script>
+  <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../static/js/js/bootstrap.min.js"></script>
+  </body>
+</html>
