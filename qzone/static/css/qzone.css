@@ -1,0 +1,122 @@
+body
+{
+	margin: 0 auto;
+}
+.navbar.navbar-default
+{
+	background-color: #0D7CD2;
+	border-width: 0;
+	border-radius: 0;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#brand
+{
+	color: white;
+	font-weight: 900;
+	font-size: 25px;
+	font-style:oblique;
+	font-family: Georgia;
+}
+.navbar-form.navbar-left
+{
+	position: relative;
+	left: 80px;
+	bottom: 20px;
+}
+#search
+{
+	width: 400px;
+}
+.glyphicon.glyphicon-user,.glyphicon.glyphicon-home,.glyphicon.glyphicon-globe
+{
+	display: inline;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	top: 19px;
+	font-size: 17px;
+}
+.glyphicon.glyphicon-home
+{
+	left:10px;
+}
+.glyphicon.glyphicon-globe
+{
+	left: 21px;
+}
+.glyphicon.glyphicon-search
+{
+	right: 28px;
+	top: 2px;
+	color: gray;
+}
+#back
+{
+	width: 100%;
+	height: 530px;
+}
+#image
+{
+	width: 140px;
+	height: 140px;
+	position: relative;
+	left: 60px;
+	bottom: 60px;
+	background-color: white;
+	display: inline;
+	border-width: thin;
+	border-color: gray;
+	border-style: solid;
+	padding: 5px;
+	border-radius: 3px;
+	margin:0 auto;
+}
+#user
+{
+	font-style:oblique;
+	font-family: Georgia;
+	position: relative;
+	left: 100px;
+	display: inline;
+}
+.button.button-glow.button-border.button-rounded.button-primary
+{
+	position: relative;
+	left: 700px;
+	bottom: 6px;
+	font-weight: 700;
+	color: black;
+	padding: 3px 10px;
+}
+.dropdown
+{
+	position: relative;
+	left: 720px;
+	display: inline;
+	color: black;
+	bottom: 10px;
+}
+.btn.btn-default.dropdown-toggle
+{
+	height: 42px;
+	width: 135px;
+	font-weight: 700;
+	font-size: 17px;
+	text-align: left;
+}
+.caret
+{
+	position: relative;
+	left: 25px;
+	font-size: 50px;
+}
+.glyphicon.glyphicon-cog
+{
+	position: relative;
+	right: 10px;
+	top: 2px;
+	font-size: 15px;
+}

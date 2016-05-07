@@ -13,7 +13,11 @@ a:hover {
   background-color: #fff;
   border: 1px solid #fff;
 }
-
+.check-box
+{
+	position: relative;
+	bottom: 7px;
+}
 
 /*
  * Base structure
