@@ -40,8 +40,8 @@
 </nav>
 	<img src="../static/picture/image.jpg" id="image">
 	<h1 id="user">huieric</h1>
-	<a href="" class="button button-glow button-border button-rounded button-primary" onmouseover="change1(this)" onmouseout="change2(this)">Add Friend</a>
-	<div class="dropdown">
+	<button class="button button-glow button-border button-rounded button-primary" onmouseover="change1(this)" onmouseout="change2(this)" onclick="move()" id="add">Add Friend</button>
+	<div class="dropdown" id="message">
 	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 	    Message
 	    <span class="caret"></span>
@@ -56,14 +56,32 @@
     <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="../static/js/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+    var c=0,d=0;
     	function change1(x)
     	{
-    		x.color="white";
+    		x.style.color="white";
     	}
     	function change2(x)
     	{
-    		x.color="black";
+    		x.style.color="black";
     	}
+      function trans1()
+      {
+        a=document.getElementById('add');
+        b=document.getElementById('message');
+        a.style.bottom=c+"px";
+        b.style.bottom=d+4+"px";
+      }
+      function move()
+      {
+        while(c<571||d<571){        
+          if(c<560) c=c+20;
+          else if(c<571) c=c+1;
+          if(d<560) d=d+10;
+          else if(d<571) d=d+1;
+          t=setTimeout("trans1()",1);
+        }
+      }
     </script>
   </body>
 </html>

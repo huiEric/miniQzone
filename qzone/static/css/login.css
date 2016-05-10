@@ -68,10 +68,14 @@ body {
 #login
 {
 	position: relative;
+	background-color: initial;
 	right: 20px;
+	top: 3px;
 	border-style: solid;
 	border-color: white;
 	border-width: thin;
+	padding-top: 5px;
+    padding-bottom: 7px;
 }
 .cover-heading
 {
